@@ -2,7 +2,7 @@ import axios from 'axios';
 import { addParamsToUrl, getNameOptions } from '../helpers';
 
 
-const HOST = 'http://localhost:3000';
+const HOST = 'http://localhost:3001';
 const API_URL = `${HOST}/subjects`;
 
 export const fetchSubjects = async (params) => {

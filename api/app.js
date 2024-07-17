@@ -5,13 +5,13 @@ import cors from 'cors';
 import { fn, col, Op } from 'sequelize';
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 const DEFAULT_LIMIT = 10;
 
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'http://localhost:3001'
+    origin: 'http://localhost:3000'
 }));
 
 app.get('/subjects', async (req, res) => {
